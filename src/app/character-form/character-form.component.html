@@ -1,0 +1,47 @@
+<form [formGroup]="characterForm">
+  <div class="character-name-container">
+    <label for="character-name">Nom du personnage :</label>
+    <br />
+    <input id="character-name" type="text" formControlName="characterName" />
+  </div>
+
+  <div class="column">
+    <label for="class">Classe :</label>
+    <select id="class" formControlName="class">
+      <option value="Classe 1">Classe 1</option>
+      <option value="Classe 2">Classe 2</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label for="level">Niveau :</label>
+    <input id="level" type="number" formControlName="level" />
+  </div>
+  <div>
+    <label for="race">Race :</label>
+    <select id="race" formControlName="race" (change)="(onSelected)">
+      <option value="Humain">Humain</option>
+      <option value="Nain">Nain</option>
+    </select>
+  </div>
+  <div>
+    <label for="background">Historique :</label>
+    <input id="background" type="text" formControlName="background" />
+  </div>
+  <div>
+    <label for="alignment">Alignement :</label>
+    <input id="alignment" type="text" formControlName="alignment" />
+  </div>
+  <div>
+    <label for="player-name">Nom du joueur :</label>
+    <input id="player-name" type="text" formControlName="playerName" />
+  </div>
+  <div>
+    <label for="experience-points">Point d'expérience :</label>
+    <input
+      id="experience-points"
+      type="number"
+      formControlName="experiencePoints"
+    />
+  </div>
+</form>
