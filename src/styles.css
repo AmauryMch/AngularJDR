@@ -2,4 +2,21 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Dice';
+    src: url('assets/fonts/Gamingdicestandard-8532.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url('assets/fonts/MedievalSharp-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
