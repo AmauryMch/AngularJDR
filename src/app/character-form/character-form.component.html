@@ -7,50 +7,29 @@
 
   <table class="t-color">
     <tr>
+
       <td class="cell-width">
         <select id="class" class="select-width form-font">
-          <option value="Classe 1">Barbare</option>
-          <option value="Classe 2">Barde</option>
-          <option value="Classe 3">Clerc</option>
-          <option value="Classe 4">Druide</option>
-          <option value="Classe 5">Ensorceleur</option>
-          <option value="Classe 6">Guerrier</option>
-          <option value="Classe 7">Magicien</option>
-          <option value="Classe 8">Moine</option>
-          <option value="Classe 9">Occultiste</option>
-          <option value="Classe 10">Paladin</option>
-          <option value="Classe 11">Rôdeur</option>
-          <option value="Classe 12">Roublard</option>
-          <option value="Classe 13" selected hidden disabled>
+          <option selected hidden disabled>
             Choisissez votre classe
+          </option>
+          <option *ngFor="let class of classes" [value]="class.name">
+            {{ class.name }}
           </option>
         </select>
       </td>
+
       <td class="cell-width">
-        <input
-          id="level"
-          type="number"
-          class="input-width form-font"
-          placeholder="Entrez votre niveau"
-        />
+        <input id="level" type="number" class="input-width form-font" placeholder="Entrez votre niveau" />
       </td>
+
       <td class="cell-width">
         <select id="race" class="select-width form-font">
-          <option value="race 1">Elfe</option>
-          <option value="race 2">Halfelin</option>
-          <option value="race 3">Humain</option>
-          <option value="race 4">Nain</option>
-          <option value="race 5">Demi-Elfe</option>
-          <option value="race 6">Demi-Orc</option>
-          <option value="race 7">Drakédie</option>
-          <option value="race 8">Gnome</option>
-          <option value="race 9">Tieffelin</option>
-          <option value="race 10">Aarakocra</option>
-          <option value="race 11">Génasi</option>
-          <option value="race 12">Gnome des profondeurs</option>
-          <option value="race 12">Goliath</option>
-          <option value="race 13" selected hidden disabled>
+          <option selected hidden disabled>
             Choisissez votre race
+          </option>
+          <option *ngFor="let race of races" [value]="race.name">
+            {{ race.name }}
           </option>
         </select>
       </td>
@@ -63,28 +42,14 @@
     </tr>
     <tr>
       <td class="cell-width">
-        <input
-          id="background"
-          type="text"
-          class="input-width form-font"
-          placeholder="Entrez votre histoire"
-        />
+        <input id="background" type="text" class="input-width form-font" placeholder="Entrez votre histoire" />
       </td>
       <td class="cell-width">
-        <input
-          id="alignment"
-          type="text"
-          class="input-width form-font"
-          placeholder="Entrez votre alignment"
-        />
+        <input id="alignment" type="text" class="input-width form-font" placeholder="Entrez votre alignment" />
       </td>
       <td class="cell-width">
-        <input
-          id="experience-points"
-          type="number"
-          class="input-width form-font"
-          placeholder="Entrez vos points expérience"
-        />
+        <input id="experience-points" type="number" class="input-width form-font"
+          placeholder="Entrez vos points expérience" />
       </td>
     </tr>
     <tr>
