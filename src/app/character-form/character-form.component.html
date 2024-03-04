@@ -1,0 +1,94 @@
+<form class="d-flex">
+  <div class="character-name-container">
+    <label for="character-name">Nom du personnage :</label>
+    <br />
+    <input id="character-name" type="text" />
+  </div>
+
+  <table class="t-color">
+    <tr>
+      <td class="cell-width">
+        <select id="class" class="input-width">
+          <option value="Classe 1">Barbare</option>
+          <option value="Classe 2">Barde</option>
+          <option value="Classe 3">Clerc</option>
+          <option value="Classe 4">Druide</option>
+          <option value="Classe 5">Ensorceleur</option>
+          <option value="Classe 6">Guerrier</option>
+          <option value="Classe 7">Magicien</option>
+          <option value="Classe 8">Moine</option>
+          <option value="Classe 9">Occultiste</option>
+          <option value="Classe 10">Paladin</option>
+          <option value="Classe 11">Rôdeur</option>
+          <option value="Classe 12">Roublard</option>
+          <option value="Classe 13" selected hidden disabled>Choisissez votre classe</option>
+        </select>
+      </td>
+      <td class="cell-width">
+        <input
+          id="level"
+          type="number"
+          class="select-width"
+          placeholder="Entrez votre niveau"
+        />
+      </td>
+      <td class="cell-width">
+        <select id="race" class="input-width">
+          <option value="race 1">Elfe</option>
+          <option value="race 2">Halfelin</option>
+          <option value="race 3">Humain</option>
+          <option value="race 4">Nain</option>
+          <option value="race 5">Demi-Elfe</option>
+          <option value="race 6">Demi-Orc</option>
+          <option value="race 7">Drakédie</option>
+          <option value="race 8">Gnome</option>
+          <option value="race 9">Tieffelin</option>
+          <option value="race 10">Aarakocra</option>
+          <option value="race 11">Génasi</option>
+          <option value="race 12">Gnome des profondeurs</option>
+          <option value="race 12">Goliath</option>
+          <option value="race 13" selected hidden disabled>Choisissez votre race</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="align-c"><label for="class">Classe</label></td>
+      <td class="align-c"><label for="level">Niveau</label></td>
+      <td class="align-c"><label for="Race">Race</label></td>
+    </tr>
+    <tr>
+      <td class="cell-width">
+        <input
+          id="background"
+          type="text"
+          class="select-width"
+          placeholder="Entrez votre histoire"
+        />
+      </td>
+      <td class="cell-width">
+        <input
+          id="alignment"
+          type="text"
+          class="select-width"
+          placeholder="Entrez votre alignment"
+        />
+      </td>
+      <td class="cell-width">
+        <input
+          id="experience-points"
+          type="number"
+          class="select-width"
+          placeholder="Entrez vos points expérience"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td class="align-c"><label for="background">Historique</label></td>
+      <td class="align-c"><label for="alignment">Alignement</label></td>
+      <td class="align-c">
+        <label for="experience-points">Point d'expérience</label>
+      </td>
+    </tr>
+  </table>
+</form>
