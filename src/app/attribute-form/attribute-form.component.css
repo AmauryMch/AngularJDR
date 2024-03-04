@@ -1,0 +1,18 @@
+.d-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.t-color {
+  background-color: #454348;
+  color: #ffffff;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.attribute-value {
+  color: #ffffff;
+}
