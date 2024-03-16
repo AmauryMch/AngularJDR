@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IRace } from '../interfaces/IRace';
+import { Open5eService } from '../services/open5e.service';
 
 @Component({
   selector: 'app-attribute-form',
@@ -10,6 +12,24 @@ import { Component } from '@angular/core';
 export class AttributeFormComponent {
 
   attributeValues: number[] = [];
+
+  raceAttributes: IRace | null = null;
+
+
+  constitution: string = '';
+
+
+  constructor(private open5eService: Open5eService) { }
+
+  ngOnInit(): void {
+    this.open5eService.getRaceAttributesObservable().subscribe((attributes: IRace | null) => {
+      console.log(attributes);
+      if (attributes) {
+        this.raceAttributes = attributes;
+      }
+    });
+  }
+
 
   genererNombresAleatoires(): void {
     this.attributeValues = [];

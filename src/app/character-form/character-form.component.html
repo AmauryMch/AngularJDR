@@ -24,7 +24,7 @@
       </td>
 
       <td class="cell-width">
-        <select id="race" class="select-width form-font">
+        <select id="race" class="select-width form-font" (change)="onRaceSelectionChange($event)">
           <option selected hidden disabled>
             Choisissez votre race
           </option>
@@ -42,7 +42,7 @@
     </tr>
 
     <br>
-    
+
     <tr>
       <td class="cell-width">
         <input id="background" type="text" class="input-width form-font" placeholder="Entrez votre historique" />

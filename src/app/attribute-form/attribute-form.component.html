@@ -12,6 +12,12 @@
     </tr>
     <tr>
       <td>
+        <p class="align-c race-value">{{ raceAttributes?.force }}</p>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td>
         <p class="align-c attribute-label">Force</p>
       </td>
     </tr>
@@ -26,6 +32,11 @@
     <tr>
       <td>
         <p class="align-c attribute-value">{{ attributeValues[1] }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="align-c race-value">{{ raceAttributes?.dexterite }}</p>
       </td>
     </tr>
     <tr>
@@ -48,6 +59,11 @@
     </tr>
     <tr>
       <td>
+        <p class="align-c race-value">{{ raceAttributes?.constitution }}</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <p class="align-c attribute-label">Constitution</p>
       </td>
     </tr>
@@ -62,10 +78,15 @@
       <td>
         <p class="align-c attribute-value">{{ attributeValues[3] }}</p>
       </td>
-    </tr>
     <tr>
       <td>
-        <p class="align-c attribute-label">Inteligence</p>
+        <p class="align-c race-value">{{ raceAttributes?.intelligence }}</p>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td>
+        <p class="align-c attribute-label">Intelligence</p>
       </td>
     </tr>
   </table>
@@ -80,6 +101,12 @@
         <p class="align-c attribute-value">{{ attributeValues[4] }}</p>
       </td>
     </tr>
+    <tr>
+      <td>
+        <p class="align-c race-value">{{ raceAttributes?.sagesse }}</p>
+      </td>
+    </tr>
+    <tr>
     <tr>
       <td>
         <p class="align-c attribute-label">Sagesse</p>
@@ -99,10 +126,16 @@
     </tr>
     <tr>
       <td>
+        <p class="align-c race-value">{{ raceAttributes?.charisme }}</p>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td>
         <p class="align-c attribute-label">Charisme</p>
       </td>
     </tr>
   </table>
 </div>
 
-<button id='dice' (click)="genererNombresAleatoires()">Générer 6 nombres aléatoires</button>
+<button id='dice' (click)="genererNombresAleatoires()">Lancer de 6 dés 20</button>

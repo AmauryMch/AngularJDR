@@ -32,4 +32,9 @@ export class CharacterFormComponent implements OnInit {
       this.races = data.results;
     });
   }
+
+  onRaceSelectionChange(event: any): void {
+    const selectedRace = event?.target?.value;
+    this.open5eService.fetchRaceAttributes(selectedRace);
+  }
 }
