@@ -3,3 +3,7 @@
   display: inline-block;
   border-radius: 0.625rem;
 }
+
+h1 {
+  text-align: center;
+}
