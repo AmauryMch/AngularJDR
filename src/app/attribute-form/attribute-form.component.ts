@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AttributeFormComponent {
 
+  attributeValues: number[] = [];
+
+  genererNombresAleatoires(): void {
+    this.attributeValues = [];
+    for (let i = 0; i < 6; i++) {
+      this.attributeValues.push(Math.floor(Math.random() * 20) + 1);
+    }
+  }
+
 }
