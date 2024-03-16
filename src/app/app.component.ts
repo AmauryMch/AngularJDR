@@ -21,10 +21,12 @@ export class AppComponent {
 
     const pdfWidth = 210;
 
-    const button = document.querySelector('button');
+    const pdfButton = document.getElementById('pdfButton');
+    const dicebutton = document.getElementById('dice')!;
 
-    if (button) {
-      button.style.display = 'none';
+    if (pdfButton) {
+      pdfButton.style.display = 'none';
+      dicebutton.style.display = 'none';
     }
 
     if (element) {
@@ -46,15 +48,14 @@ export class AppComponent {
 
         pdf.save(`fiche_personnage_${date}.pdf`);
 
-        if (button) {
-          button.style.display = 'block'; // Réaffiche le bouton après avoir sauvegardé le PDF
+        if (pdfButton) {
+          pdfButton.style.display = 'block';
+          dicebutton.style.display = 'block';
         }
       });
     } else {
       console.error('Element with id "contentToConvert" not found.');
     }
   }
-
-
 
 }
