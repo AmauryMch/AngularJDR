@@ -5,7 +5,6 @@
 }
 
 .t-color {
-  background-color: #454348;
   border: 0.0625rem solid #000;
   border-radius: 1.5625rem;
   padding: 0.625rem;
@@ -18,16 +17,18 @@
 }
 
 .attribute-value {
-  color: #ffffff;
   font-family: "Dice";
   font-size: 4rem;
   margin: 0 auto;
 }
 
 .attribute-label {
-  color: #ffffff;
   font-family: "MedievalSharp";
   font-size: 1.875rem;
   margin: 0 auto;
   padding-bottom: 0.625rem;
+}
+
+td img {
+  filter: brightness(10%);
 }

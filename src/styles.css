@@ -1,7 +1,9 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: #c9c9c9;
+    background-image: url('assets/old parchment.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
