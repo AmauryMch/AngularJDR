@@ -48,6 +48,10 @@ export class Open5eService {
     return this.http.get(this.apiRoutes.races);
   }
 
+  public getAllBackgrounds(): Observable<Object> {
+    return this.http.get(this.apiRoutes.backgrounds);
+  }
+
   public getRaceByNames(raceName: String): Observable<Object> {
     return this.http.get(this.apiRoutes.racesByName + raceName + this.apiRoutes.racesByNameNext)
   }
