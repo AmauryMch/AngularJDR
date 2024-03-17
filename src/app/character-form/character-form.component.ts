@@ -13,12 +13,26 @@ import { NgFor } from '@angular/common';
 export class CharacterFormComponent implements OnInit {
   classes: any;
   races: any;
+  backgrounds: any;
+
+  alignments = [
+    'Lawful Good (LG)',
+    'Neutral Good (NG)',
+    'Chaotic Good (CG)',
+    'Lawful Neutral (LN)',
+    'Neutral (N)',
+    'Chaotic Neutral (CN)',
+    'Lawful Evil (LE)',
+    'Neutral Evil (NE)',
+    'Chaotic Evil (CE)'
+  ];
 
   constructor(private open5eService: Open5eService) { }
 
   ngOnInit(): void {
     this.getAllClasses();
     this.getAllRaces();
+    this.getAllBackgrounds();
   }
 
   getAllClasses() {
@@ -30,6 +44,12 @@ export class CharacterFormComponent implements OnInit {
   getAllRaces() {
     this.open5eService.getAllRaces().subscribe((data: any) => {
       this.races = data.results;
+    });
+  }
+
+  getAllBackgrounds() {
+    this.open5eService.getAllBackgrounds().subscribe((data: any) => {
+      this.backgrounds = data.results;
     });
   }
 

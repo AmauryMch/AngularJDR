@@ -36,3 +36,8 @@
   margin: 0 auto;
   padding-bottom: 0.625rem;
 }
+
+button {
+  margin-bottom: 1rem;
+  background-color: transparent;
+}

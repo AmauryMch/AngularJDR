@@ -2,12 +2,18 @@
   <div class="character-name-container form-font">
     <label for="character-name">Nom du personnage :</label>
     <br />
-    <input id="character-name" type="text" class="form-font" />
+    <input id="character-name" type="text" class="form-font" placeholder="Entrez votre nom" autocomplete="off" />
   </div>
 
   <table>
-    <tr>
 
+    <tr>
+      <td class="align-c form-font"><label for="class">Classe</label></td>
+      <td class="align-c form-font"><label for="level">Niveau</label></td>
+      <td class="align-c form-font"><label for="Race">Race</label></td>
+    </tr>
+
+    <tr>
       <td class="cell-width">
         <select id="class" class="select-width form-font">
           <option selected hidden disabled>
@@ -35,26 +41,8 @@
       </td>
     </tr>
 
-    <tr>
-      <td class="align-c form-font"><label for="class">Classe</label></td>
-      <td class="align-c form-font"><label for="level">Niveau</label></td>
-      <td class="align-c form-font"><label for="Race">Race</label></td>
-    </tr>
-
     <br>
 
-    <tr>
-      <td class="cell-width">
-        <input id="background" type="text" class="input-width form-font" placeholder="Entrez votre historique" />
-      </td>
-      <td class="cell-width">
-        <input id="alignment" type="text" class="input-width form-font" placeholder="Entrez votre alignment" />
-      </td>
-      <td class="cell-width">
-        <input id="experience-points" type="number" class="input-width form-font"
-          placeholder="Entrez vos points expérience" />
-      </td>
-    </tr>
     <tr>
       <td class="align-c form-font">
         <label for="background">Historique</label>
@@ -64,6 +52,33 @@
       </td>
       <td class="align-c form-font">
         <label for="experience-points">Point d'expérience</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="cell-width">
+        <select id="background" class="select-width form-font">
+          <option selected hidden disabled>
+            Choisissez votre historique
+          </option>
+          <option *ngFor="let background of backgrounds" [value]="background.name">
+            {{ background.name }}
+          </option>
+        </select>
+      </td>
+      <td class="cell-width">
+        <select id="alignment" class="select-width form-font">
+          <option selected hidden disabled>
+            Choisissez votre alignement
+          </option>
+          <option *ngFor="let alignment of alignments" [value]="alignment">
+            {{ alignment }}
+          </option>
+        </select>
+      </td>
+      <td class="cell-width">
+        <input id="experience-points" type="number" class="input-width form-font"
+          placeholder="Entrez vos points expérience" />
       </td>
     </tr>
   </table>
