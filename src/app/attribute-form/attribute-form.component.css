@@ -1,0 +1,38 @@
+.d-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.t-color {
+  border: 0.0625rem solid #000;
+  border-radius: 1.5625rem;
+  padding: 0.625rem;
+  margin: 0.3125rem;
+  text-align: center;
+}
+
+.align-c {
+  text-align: center;
+}
+
+.attribute-value {
+  font-family: "Dice";
+  font-size: 4rem;
+  margin: 0 auto;
+}
+
+.race-value {
+  font-family: "Dice";
+  font-size: 2rem;
+  margin-top: -1rem;
+  margin-bottom: -0.5rem;
+  color: red;
+}
+
+.attribute-label {
+  font-family: "MedievalSharp";
+  font-size: 1.875rem;
+  margin: 0 auto;
+  padding-bottom: 0.625rem;
+}
