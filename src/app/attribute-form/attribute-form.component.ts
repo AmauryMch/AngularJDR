@@ -15,10 +15,6 @@ export class AttributeFormComponent {
 
   raceAttributes: IRace | null = null;
 
-
-  constitution: string = '';
-
-
   constructor(private open5eService: Open5eService) { }
 
   ngOnInit(): void {
